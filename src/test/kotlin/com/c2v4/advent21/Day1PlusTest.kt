@@ -5,7 +5,7 @@ import org.assertj.core.api.Assertions
 
 class Day1PlusTest : AnnotationSpec() {
     @Test
-    fun day1test() {
+    fun test() {
         Assertions.assertThat(
             sonarSweep2(
                 "199\n" +
