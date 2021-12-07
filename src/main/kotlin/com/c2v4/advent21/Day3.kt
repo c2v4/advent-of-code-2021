@@ -44,7 +44,7 @@ fun binaryDiagnostic(input: String) = input.split(EOL)
     .joinToString("") { it.toString() }
     .let { it.toInt(2) * it.toInt(2).inv().and(2.pow(it.length) - 1) }
 
-private fun Int.pow(power: Int): Int =
+fun Int.pow(power: Int): Int =
     this.toDouble().pow(power).toInt()
 
 private fun <T> transpose(table: List<List<T>>): List<List<T>> {
